@@ -1,18 +1,16 @@
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.List;
+import java.util.LinkedList;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to the super heroes party!");
         //No ordena los elementos
-        Set<String> superHeroes = new HashSet<>();
-        //Ordena los elementos alfabeticamente si no le damos un orden nosotros.
-        // Set<String> superHeroes = new TreeSet()<>(); 
+        // List<String> superHeroes = new ArrayList<>();
+        // Doblemente enlazado
+        List<String> superHeroes = new LinkedList<>(); 
 
-        // Prioriza el orden de agregado
-        // Set<String> superHeroes = new LinkedHashSet()<>();
+        // Para multithread
+        // List<String> superHeroes = new Vector<>();
 
         superHeroes.add("Spiderman");
         superHeroes.add("Ironman");
